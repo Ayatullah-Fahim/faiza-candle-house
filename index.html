@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Faiza Candle House — হাতে তৈরি সুন্দর মোমবাতি অর্ডার করুন।">
+
+  <meta name="theme-color" content="#fff5f8">
+
+  <title>Faiza Candle House | Handmade Candles</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    🌸 আপনার পছন্দের মোমবাতি অর্ডার করুন — Faiza Candle House
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <a class="brand" href="#home" aria-label="Faiza Candle House Home">
+
+      <span class="brand-mark">✿</span>
+
+      <span>
+        <strong>Faiza Candle House</strong>
+        <small>Handmade with love</small>
+      </span>
+
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      type="button">
+      ☰
+    </button>
+
+    <nav id="mainNav">
+
+      <a href="#home">হোম</a>
+      <a href="#shop">ক্যান্ডেল শপ</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#order">অর্ডার</a>
+
+    </nav>
+
+    <a class="cart-link" href="#shop">
+      কার্ট <span id="cartCount">0</span>
+    </a>
+
+  </header>
+
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          HANDMADE • HEARTMADE
+        </span>
+
+        <h1>
+          আলো ছড়াক<br>
+          <em>ভালোবাসার</em> গল্প
+        </h1>
+
+        <p>
+          আপনার ঘর, উপহার আর বিশেষ মুহূর্তের জন্য সুন্দর
+          হাতে তৈরি মোমবাতি। আপনার পছন্দের ডিজাইন বেছে
+          নিয়ে অর্ডার করুন।
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="button button-primary" href="#shop">
+            ক্যান্ডেল দেখুন <span>→</span>
+          </a>
+
+          <a class="button button-light" href="#order">
+            অর্ডার করুন
+          </a>
+
+        </div>
+
+        <div class="hero-note">
+          <span class="tiny-flower">✿</span>
+          যত্নে তৈরি, ভালোবাসায় মোড়ানো
+        </div>
+
+      </div>
+
+
+      <!-- Hero Photo Box -->
+      <div class="hero-art" aria-label="ক্যান্ডেলের ছবি">
+
+        <div class="photo-placeholder hero-photo">
+
+          <img
+            src="image/image1.jpg.jpeg"
+            alt="Faiza Candle House-এর হাতে তৈরি ক্যান্ডেল"
+          >
+
+        </div>
+
+        <div class="floating-note">
+          Made with ♡
+        </div>
+
+        <span class="decor decor-one">✿</span>
+        <span class="decor decor-two">✧</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits" aria-label="আমাদের সুবিধা">
+
+      <div>
+        <span>♡</span>
+
+        <p>
+          <strong>হাতে তৈরি</strong>
+          <small>ভালোবাসা ও যত্নে</small>
+        </p>
+      </div>
+
+      <div>
+        <span>✿</span>
+
+        <p>
+          <strong>বিভিন্ন ডিজাইন</strong>
+          <small>আপনার পছন্দমতো</small>
+        </p>
+      </div>
+
+      <div>
+        <span>▱</span>
+
+        <p>
+          <strong>সহজ অর্ডার</strong>
+          <small>WhatsApp-এ যোগাযোগ</small>
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- Shop Section -->
+    <section class="shop-section section-wrap" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="eyebrow">
+            OUR COLLECTION
+          </span>
+
+          <h2>
+            আমাদের <em>ক্যান্ডেল কালেকশন</em>
+          </h2>
+
+          <p>
+            আপনার পছন্দের মোমবাতি বেছে কার্টে যোগ করুন।
+          </p>
+
+        </div>
+
+
+        <div class="shop-tools">
+
+          <label class="sr-only" for="categoryFilter">
+            ক্যাটাগরি বাছাই করুন
+          </label>
+
+          <select id="categoryFilter">
+
+            <option value="all">সব ধরনের</option>
+            <option value="decorative">ডেকোরেটিভ</option>
+            <option value="flower">ফ্লাওয়ার</option>
+            <option value="scented">সুগন্ধি</option>
+            <option value="gift">গিফট</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <!-- Products will be added by script.js -->
+      <div
+        class="product-grid"
+        id="productGrid"
+        aria-live="polite">
+      </div>
+
+      <p class="edit-tip">
+        আপনার আসল পণ্যের নাম, দাম ও ছবি যোগ করতে
+        script.js ফাইল সম্পাদনা করুন।
+      </p>
+
+    </section>
+
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+
+
+      <!-- About Photo Box -->
+      <div class="about-art">
+
+        <div class="photo-placeholder about-photo">
+
+          <img
+            src="image/image1.jpg.jpeg"
+            alt="আম্মুর তৈরি হাতে বানানো ক্যান্ডেল"
+            loading="lazy"
+          >
+
+        </div>
+
+      </div>
+
+
+      <!-- About Text -->
+      <div class="about-copy">
+
+        <span class="eyebrow">
+          A LITTLE ABOUT US
+        </span>
+
+        <h2>
+          ছোট্ট আলোতে<br>
+          <em>বড় আনন্দ</em>
+        </h2>
+
+        <p>
+          Faiza Candle House-এ আমরা সুন্দর মোমবাতির মাধ্যমে
+          আপনার বিশেষ মুহূর্তগুলোকে আরও আনন্দময় করতে চাই।
+          এখানে আপনার পছন্দের ডিজাইন বেছে নিতে পারেন,
+          আর কাস্টম অর্ডারের জন্য আমাদের সঙ্গে যোগাযোগ করতে পারেন।
+        </p>
+
+        <a class="text-link" href="#order">
+          আপনার অর্ডার শুরু করুন →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Order Section -->
+    <section class="order-section section-wrap" id="order">
+
+      <div class="section-heading centered">
+
+        <span class="eyebrow">
+          PLACE YOUR ORDER
+        </span>
+
+        <h2>
+          আপনার অর্ডার <em>দিন</em>
+        </h2>
+
+        <p>
+          কার্টে পণ্য যোগ করে নিচের তথ্য পূরণ করুন।
+          এরপর WhatsApp-এ অর্ডার পাঠাতে পারবেন।
+        </p>
+
+      </div>
+
+
+      <div class="order-layout">
+
+
+        <!-- Customer Order Form -->
+        <form id="orderForm" class="order-form">
+
+          <div class="form-row">
+
+            <label for="customerName">
+              আপনার নাম *
+            </label>
+
+            <input
+              type="text"
+              id="customerName"
+              name="customerName"
+              required
+              placeholder="সম্পূর্ণ নাম"
+            >
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label for="customerPhone">
+              ফোন নম্বর *
+            </label>
+
+            <input
+              type="tel"
+              id="customerPhone"
+              name="customerPhone"
+              required
+              inputmode="tel"
+              placeholder="01XXXXXXXXX"
+            >
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label for="customerAddress">
+              ডেলিভারির ঠিকানা *
+            </label>
+
+            <textarea
+              id="customerAddress"
+              name="customerAddress"
+              required
+              rows="3"
+              placeholder="বাসা/রোড, এলাকা, জেলা">
+            </textarea>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label for="orderNotes">
+              অতিরিক্ত নির্দেশনা (ঐচ্ছিক)
+            </label>
+
+            <textarea
+              id="orderNotes"
+              name="orderNotes"
+              rows="2"
+              placeholder="রঙ, ডিজাইন বা ডেলিভারি বিষয়ে কিছু জানাতে চাইলে লিখুন">
+            </textarea>
+
+          </div>
+
+
+          <button
+            class="button button-primary button-full"
+            type="submit">
+
+            WhatsApp-এ অর্ডার পাঠান <span>↗</span>
+
+          </button>
+
+          <p class="form-hint">
+            বাটনে চাপলে WhatsApp খুলবে।
+            সেখানে মেসেজটি দেখে নিজে Send চাপুন।
+          </p>
+
+        </form>
+
+
+        <!-- Shopping Cart -->
+        <aside class="cart-panel">
+
+          <div class="cart-panel-title">
+
+            <h3>আপনার কার্ট</h3>
+
+            <span id="cartPanelCount">
+              0টি পণ্য
+            </span>
+
+          </div>
+
+
+          <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+              এখনো কোনো পণ্য যোগ করা হয়নি।
+            </p>
+
+          </div>
+
+
+          <div class="cart-total">
+
+            <span>মোট</span>
+
+            <strong id="cartTotal">
+              ৳০
+            </strong>
+
+          </div>
+
+
+          <p class="delivery-note">
+            ডেলিভারি চার্জ ঠিকানা অনুযায়ী WhatsApp-এ
+            নিশ্চিত করা হবে।
+          </p>
+
+
+          <button
+            class="clear-cart"
+            id="clearCart"
+            type="button">
+
+            কার্ট খালি করুন
+
+          </button>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <a class="brand footer-brand" href="#home">
+
+      <span class="brand-mark">✿</span>
+
+      <span>
+        <strong>Faiza Candle House</strong>
+        <small>Handmade with love</small>
+      </span>
+
+    </a>
+
+
+    <p>
+      আপনার ঘরে থাকুক উষ্ণতা আর ভালোবাসা।
+    </p>
+
+
+    <a
+      class="footer-whatsapp"
+      id="footerWhatsApp"
+      href="https://wa.me/8801323111484"
+      target="_blank"
+      rel="noopener">
+
+      WhatsApp-এ যোগাযোগ করুন ↗
+
+    </a>
+
+
+    <small class="copyright">
+      © <span id="year"></span>
+      Faiza Candle House. All rights reserved.
+    </small>
+
+  </footer>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    class="floating-whatsapp"
+    id="floatingWhatsApp"
+    href="https://wa.me/8801323111484"
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp-এ যোগাযোগ করুন">
+
+    ✆
+
+  </a>
+
+
+  <!-- Toast Message -->
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite">
+  </div>
+
+
+  <!-- Product Image Modal -->
+  <div
+    class="image-modal"
+    id="imageModal"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalName">
+
+
+    <div class="image-modal-card">
+
+
+      <button
+        type="button"
+        class="modal-close"
+        id="closeImageModal"
+        aria-label="বন্ধ করুন">
+
+        ×
+
+      </button>
+
+
+      <div class="modal-image-wrap">
+
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+        >
+
+      </div>
+
+
+      <div class="modal-product-info">
+
+        <span class="eyebrow">
+          FAIZA CANDLE HOUSE
+        </span>
+
+        <h2 id="modalName"></h2>
+
+        <p id="modalDescription"></p>
+
+        <strong
+          class="modal-price"
+          id="modalPrice">
+        </strong>
+
+
+        <div class="modal-actions">
+
+          <button
+            class="button button-primary"
+            type="button"
+            id="modalAddCart">
+
+            কার্টে যোগ করুন
+
+          </button>
+
+
+          <a
+            class="button whatsapp-order-button"
+            id="modalWhatsApp"
+            href="https://wa.me/8801323111484"
+            target="_blank"
+            rel="noopener">
+
+            WhatsApp-এ অর্ডার ↗
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
